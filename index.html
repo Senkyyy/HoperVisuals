@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HoperVisuals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1>Hoper Visuals</h1>
+      <p>Лучшие моды, шейдеры и текстуры Minecraft для максимальной графики и FPS.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Добро пожаловать на Hoper Visuals</h2>
+      <p>Мы создаём лучшие визуалы для Minecraft: текстуры, шейдеры, стили и атмосферу. Погрузитесь в мир высокого FPS и ярких эффектов.</p>
+      <div class="hero-actions">
+        <a href="https://discord.gg/WKPnPnbk" class="btn btn-primary" target="_blank" rel="noopener">Наш дискорд сервер</a>
+        <button id="themeToggle" class="btn">Переключить тему</button>
+      </div>
+      <div class="buy-actions" style="margin-top: 16px; text-align: center;">
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+        <stripe-buy-button
+          buy-button-id="buy_btn_1TA4Qa3OXEYNpFSGfAUT7eor"
+          publishable-key="pk_test_51TA4G73OXEYNpFSGrXgzxphddlYPhDNwcQwPoJwL8dt0O5BHRGzxJx2dTTtuDqoWcTfwDEHwAeXISsx4GDjRWwKV00ieoFFodc"
+        >
+        </stripe-buy-button>
+      </div>
+    </section>
+
+    <section class="features visuals">
+      <article class="card media" style="background-image: url('visual-1.jpg')">
+        <h3>Огненные текстуры</h3>
+        <p>Горящие блоки, пламя и лавовые эффекты уровня студийных модпаков.</p>
+      </article>
+      <article class="card media" style="background-image: url('visual-2.jpg')">
+        <h3>Кристальный оптимизированный шейдер</h3>
+        <p>Чёткие тени, светящиеся частицы и союз стабильности с красотой.</p>
+      </article>
+      <article class="card media" style="background-image: url('visual-3.jpg')">
+        <h3>Ночное небо</h3>
+        <p>Яркие звезды, светящиеся облака, мистическая атмосфера.</p>
+      </article>
+    </section>
+      <article class="card">
+        <h3>Супер шейдеры</h3>
+        <p>Улучшенная реалистичная вода, тени и свет для максимальной атмосферы.</p>
+      </article>
+      <article class="card">
+        <h3>HD текстуры</h3>
+        <p>Яркий стиль и детальность, оптимизированные для плавного FPS.</p>
+      </article>
+      <article class="card">
+        <h3>Оптимизация</h3>
+        <p>Технологии, которые дают больше FPS без потерь качества.</p>
+      </article>
+    </section>
+
+    <section class="form-block">
+      <h2>Обратная связь</h2>
+      <p>Оставьте свое сообщение, и я покажу его прямо на странице.</p>
+      <form id="feedbackForm">
+        <label for="name">Имя</label>
+        <input type="text" id="name" name="name" placeholder="Ваше имя" required />
+
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" rows="4" placeholder="Ваш отзыв" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Отправить</button>
+      </form>
+      <div id="response" class="response"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 HoperVisual не относится к Mojang, все деньги уходят на развитие проекта.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
